@@ -1,11 +1,17 @@
 <html>
   <body>
-    <p id="demo">
-    <input type="text" name="email" placeholder="Email">
-    <input type="text" name="fname" placeholder="First name">
-    <input type="text" name="lname" placeholder="Last name">
-    <input type="text" name="address" placeholder="Address"></br></br>
-    <button onclick="msg()">Submit</button>
+    <div id="formhide">
+      <h1>Email:</h1> <span id="mail"> </span>
+      <h1>Firstname:</h1> <span id="fn"> </span>
+      <h1>Lastname:</h1> <span id="ln"> </span>
+      <h1>Address:</h1> <span id="addr"> </span>
+    </div>
+    <div id="showform">
+      <input type="text" name="email" placeholder="Email" id="Email">
+      <input type="text" name="fname" placeholder="Firstname" id="Firstname">
+      <input type="text" name="lname" placeholder="Lastname" id="Lastname">
+      <input type="text" name="address" placeholder="Address" id="Address"></br></br>
+      <button type="button" onclick="showform()">Submit</button>
   </body>
 </html>
 <script type="text/javascript" src="task.js"></script>
